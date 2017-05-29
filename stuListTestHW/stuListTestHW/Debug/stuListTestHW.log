@@ -1,0 +1,4 @@
+﻿  studentList.cpp
+c:\users\cwa\documents\cs-162\stulisttesthw\stulisttesthw\studentlist.cpp(64): warning C4715: 'StudentList::insert': not all control paths return a value
+  stuListTestHW.vcxproj -> C:\Users\CWA\Documents\CS-162\stuListTestHW\Debug\stuListTestHW.exe
+  stuListTestHW.vcxproj -> C:\Users\CWA\Documents\CS-162\stuListTestHW\Debug\stuListTestHW.pdb (Full PDB)
