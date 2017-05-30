@@ -271,20 +271,18 @@ Retn: return a pointer to the new list
 LinkedList* LinkedList::duplicate()
 {
 	LinkedList* newList = new LinkedList;	//create new pointer list
-	Node* current = head;					//pointer to traverse through list
-	Node* trail;
-
+	
 	//copy the first node
 	Node* newNode = new Node;				//create a new node pointer
 
-	head = newNode;
-	head->data = current->data;				//copy the data
-	head->nextNode = NULL;						//set the nextNode field of the node to NULL
+	newList->head = newNode;
+	newList->head->data = current->data;				//copy the data
+	newList->head->nextNode = NULL;						//set the nextNode field of the node to NULL
 
-	trail = head;							//make the trail (previous) point to first node
-	current = current->nextNode;				//make current point to the nextNode node
+	//copy the remaining list	
+	Node* current = head->nextNode;					//pointer to traverse through list
+	Node* trail = newList->head;							//make the trail (previous) point to first node
 
-	//copy the remaining list
 	while (current != NULL)
 	{
 		Node* newNode = new Node;			//create a node
